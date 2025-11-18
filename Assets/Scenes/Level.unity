@@ -3555,6 +3555,7 @@ MonoBehaviour:
   currentLevelDataInspector:
     levelIndex: 0
     groups: []
+  levelProgressList: []
 --- !u!1 &451010456
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,6 +3590,7 @@ MonoBehaviour:
   spacing: 1.5
   saveFolderName: Levels
   objectPrefab: {fileID: 1205563407586095530, guid: 384a68f31b62fdc4aa6fc5de74819bc2, type: 3}
+  defaultShape: 0
 --- !u!4 &451010458
 Transform:
   m_ObjectHideFlags: 0

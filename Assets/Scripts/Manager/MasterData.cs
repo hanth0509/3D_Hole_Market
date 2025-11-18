@@ -1,88 +1,3 @@
-// using UnityEngine;
-// using UnityCommunity.UnitySingleton;
-
-// public class MasterData : MonoSingleton<MasterData>
-// {
-//     public TextAsset currentLevelFile;
-//     [SerializeField] private LevelData currentLevelData;
-
-//     // Thêm property để truy cập level data từ bên ngoài
-//     public LevelData CurrentLevelData => currentLevelData;
-//     // public int CurrentLevelIndex { get; private set; } = 1;
-
-//     // Start is called once before the first execution of Update after the MonoBehaviour is created
-//     void Start()
-//     {
-
-//     }
-
-//     // Update is called once per frame
-//     void Update()
-//     {
-
-//     }
-//     public TextAsset LoadLevelData(int levelIndex)
-//     {
-//         Debug.Log($"Đang load level {levelIndex}...");
-//         // Đường dẫn bên trong Resources (không cần .json)
-//         string resourcePath = $"Levels/level_{levelIndex}";
-
-//         // Load file JSON từ Resources
-//         TextAsset jsonAsset = Resources.Load<TextAsset>(resourcePath);
-
-//         if (jsonAsset == null)
-//         {
-//             Debug.LogError($"Không tìm thấy file: Resources/{resourcePath}.json");
-//             return null;
-//         }
-
-//         try
-//         {
-//             // Ghi lại để debug trong Inspector
-//             currentLevelFile = jsonAsset;
-//             // CurrentLevelIndex = levelIndex;
-
-//             // Dùng Easy Save để parse JSON thành object (vì ES3 đọc được từ chuỗi JSON)
-//             // currentLevelData = ES3.DeserializeFromString<LevelData>(jsonAsset.text);
-
-//             // Parse JSON thành object
-//             currentLevelData = JsonUtility.FromJson<LevelData>(jsonAsset.text);
-//             Debug.Log(currentLevelData.groups.Count);
-
-//             // Debug.Log(currentLevelData.groups[1].positions[2]);
-//             // Debug.Log($"✅ Loaded {resourcePath}.json successfully! ({currentLevelData.groups.Count} groups)");
-
-//             if (currentLevelData == null)
-//             {
-//                 Debug.LogError($"Failed to parse JSON for level {levelIndex}");
-//                 return null;
-//             }
-
-//             Debug.Log($"Loaded {resourcePath}.json successfully! ({currentLevelData.groups.Count} groups)");
-//             Debug.Log($"Level Index: {currentLevelData.levelIndex}");
-//             // return true;
-
-//             // Debug chi tiết các groups
-//             // for (int i = 0; i < currentLevelData.groups.Count; i++)
-//             // {
-//             //     var group = currentLevelData.groups[i];
-//             //     Debug.Log($"Group {i}: {group.groupName} - {group.positions.Count} positions");
-//             // }
-
-//         }
-//         catch (System.Exception ex)
-//         {
-//             Debug.LogError($"⚠️ Failed to load or parse level: {ex.Message}");
-//         }
-//         return null;
-//     }
-//     public LevelData GetCurrentLevelData()
-//     {
-//         return currentLevelData;
-//     }
-// }
-
-
 using UnityEngine;
 using UnityCommunity.UnitySingleton;
 using System.Collections.Generic;
@@ -117,6 +32,18 @@ public class MasterData : MonoSingleton<MasterData>
         public Vector3 ToVector3() { return new Vector3(x, y, z); }
     }
 
+    // Them moi truong luu tru tien trinh level
+    [System.Serializable]
+    public class LevelProgress
+    {
+        public int levelNumber;
+        public bool isUnlocked;
+        public bool isCompleted;
+        public int highScore;
+        public int stars;
+    }
+    [SerializeField] public List<LevelProgress> levelProgressList = new List<LevelProgress>();
+
     //Đảm bảo tồn tại xuyên scene
     protected override void Awake()
     {
@@ -134,8 +61,69 @@ public class MasterData : MonoSingleton<MasterData>
         Debug.Log($"   Instance: {Instance != null}");
         Debug.Log($"   CurrentLevelData: {CurrentLevelData != null}");
         Debug.Log($"   CurrentLevelFile: {currentLevelFile != null}");
+
+        InitializeLevelProgress();
     }
 
+    public void InitializeLevelProgress()
+    {
+        if (levelProgressList.Count == 0)
+        {
+            for (int i = 1; i <= 48; i++)
+            {
+                levelProgressList.Add(new LevelProgress
+                {
+                    levelNumber = i,
+                    isUnlocked = (i == 1),
+                    isCompleted = false,
+                    highScore = 0,
+                    stars = 0
+                });
+            }
+            SaveGameProgress();
+        }
+    }
+    public void UpdateLevelProgress(int levelNumber, bool completed, int score, int stars)
+    {
+        LevelProgress progress = levelProgressList.Find(p => p.levelNumber == levelNumber);
+        
+        if (progress != null)
+        {
+            progress.isCompleted = completed;
+            
+            if (score > progress.highScore)
+                progress.highScore = score;
+                
+            if (stars > progress.stars)
+                progress.stars = stars;
+            
+            // MỞ KHÓA LEVEL TIẾP THEO
+            if (completed && levelNumber < 48)
+            {
+                LevelProgress nextLevel = levelProgressList.Find(p => p.levelNumber == levelNumber + 1);
+                if (nextLevel != null) 
+                    nextLevel.isUnlocked = true;
+            }
+            
+            SaveGameProgress();
+            Debug.Log($"💾 Đã lưu progress Level {levelNumber}");
+        }
+    }
+
+    void SaveGameProgress()
+    {
+        ES3.Save("levelProgress", levelProgressList);
+        Debug.Log("✅ Đã lưu game progress");
+    }
+
+    void LoadGameProgress()
+    {
+        if (ES3.KeyExists("levelProgress"))
+        {
+            levelProgressList = ES3.Load<List<LevelProgress>>("levelProgress");
+            Debug.Log("✅ Đã load game progress");
+        }
+    }
     public bool LoadLevelData(int levelIndex)
     {
         Debug.Log($"=== LOAD LEVEL {levelIndex} ===");

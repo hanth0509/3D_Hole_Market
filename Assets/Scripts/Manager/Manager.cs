@@ -16,7 +16,13 @@ public class Manager : MonoBehaviour
     {
         if (score >= scaleStep && score % scaleStep == 0 && lastScoreChecked != score)
         {
-            hole.transform.localScale += new Vector3(1f, hole.transform.localScale.y,1f);
+            // hole.transform.localScale += new Vector3(1f, hole.transform.localScale.y,1f);
+            Hole holeScript = hole.GetComponent<Hole>();
+            if (holeScript != null)
+            {
+                holeScript.currentSize += 1f; // Tăng size
+                holeScript.UpdateHoleVisual(); // Cập nhật visual
+            }
             lastScoreChecked = score;
         }
     }

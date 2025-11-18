@@ -1856,11 +1856,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c25367ce1832d4e9dc7ed4d718a827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfGroups: 3
+  numberOfGroups: 7
   groupSizeRange: {x: 3, y: 6}
   spacing: 1.5
   saveFolderName: Levels
   objectPrefab: {fileID: 1205563407586095530, guid: 384a68f31b62fdc4aa6fc5de74819bc2, type: 3}
+  defaultShape: 3
 --- !u!4 &2037271866
 Transform:
   m_ObjectHideFlags: 0

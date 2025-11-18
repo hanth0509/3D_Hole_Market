@@ -1,0 +1,542 @@
+{
+	"LevelData" : {
+		"__type" : "LevelData,Assembly-CSharp",
+		"value" : {
+			"levelIndex" : 49,
+			"groups" : [
+				{
+					"groupName" : "Group_0",
+					"shapeType" : "RECTANGLE",
+					"objectSize" : "LARGE",
+					"points" : 100,
+					"positions" : [
+						{
+							"x" : 0,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 0,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 0,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 0,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 0,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 0,
+							"y" : 0,
+							"z" : 7.5
+						},{
+							"x" : 1.80000007,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 1.80000007,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 1.80000007,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 1.80000007,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 1.80000007,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 1.80000007,
+							"y" : 0,
+							"z" : 7.5
+						},{
+							"x" : 3.60000014,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 3.60000014,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 3.60000014,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 3.60000014,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 3.60000014,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 3.60000014,
+							"y" : 0,
+							"z" : 7.5
+						}
+					],
+					"positionSizes" : [
+						"SMALL","SMALL","MEDIUM","MEDIUM","SMALL","SMALL","SMALL","MEDIUM","LARGE","LARGE","MEDIUM","SMALL","SMALL","SMALL","MEDIUM","MEDIUM","SMALL","SMALL"
+					]
+				},{
+					"groupName" : "Group_1",
+					"shapeType" : "TRIANGLE",
+					"objectSize" : "SMALL",
+					"points" : 10,
+					"positions" : [
+						{
+							"x" : 12,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 11.25,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 12.75,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 10.5,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 12,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 13.5,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 9.75,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 11.25,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 12.75,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 14.25,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 9,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 10.5,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 12,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 13.5,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 15,
+							"y" : 0,
+							"z" : 6
+						}
+					],
+					"positionSizes" : [
+						"SMALL","MEDIUM","MEDIUM","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE","LARGE"
+					]
+				},{
+					"groupName" : "Group_2",
+					"shapeType" : "SQUARE",
+					"objectSize" : "SPECIAL",
+					"points" : 200,
+					"positions" : [
+						{
+							"x" : 24,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 24,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 24,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 24,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 25.5,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 25.5,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 25.5,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 25.5,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 27,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 27,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 27,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 27,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 28.5,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 28.5,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 28.5,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 28.5,
+							"y" : 0,
+							"z" : 4.5
+						}
+					],
+					"positionSizes" : [
+						"SMALL","MEDIUM","MEDIUM","SMALL","MEDIUM","LARGE","LARGE","MEDIUM","MEDIUM","LARGE","LARGE","MEDIUM","SMALL","MEDIUM","MEDIUM","SMALL"
+					]
+				},{
+					"groupName" : "Group_3",
+					"shapeType" : "RECTANGLE",
+					"objectSize" : "SMALL",
+					"points" : 10,
+					"positions" : [
+						{
+							"x" : 36,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 36,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 36,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 36,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 36,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 36,
+							"y" : 0,
+							"z" : 7.5
+						},{
+							"x" : 37.8,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 37.8,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 37.8,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 37.8,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 37.8,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 37.8,
+							"y" : 0,
+							"z" : 7.5
+						},{
+							"x" : 39.6,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 39.6,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 39.6,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 39.6,
+							"y" : 0,
+							"z" : 4.5
+						},{
+							"x" : 39.6,
+							"y" : 0,
+							"z" : 6
+						},{
+							"x" : 39.6,
+							"y" : 0,
+							"z" : 7.5
+						}
+					],
+					"positionSizes" : [
+						"SMALL","SMALL","MEDIUM","MEDIUM","SMALL","SMALL","SMALL","MEDIUM","LARGE","LARGE","MEDIUM","SMALL","SMALL","SMALL","MEDIUM","MEDIUM","SMALL","SMALL"
+					]
+				},{
+					"groupName" : "Group_4",
+					"shapeType" : "CIRCLE",
+					"objectSize" : "LARGE",
+					"points" : 100,
+					"positions" : [
+						{
+							"x" : 50,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 49.73205,
+							"y" : 0,
+							"z" : 1
+						},{
+							"x" : 49,
+							"y" : 0,
+							"z" : 1.7320509
+						},{
+							"x" : 48,
+							"y" : 0,
+							"z" : 2
+						},{
+							"x" : 47,
+							"y" : 0,
+							"z" : 1.73205078
+						},{
+							"x" : 46.26795,
+							"y" : 0,
+							"z" : 1.00000012
+						},{
+							"x" : 46,
+							"y" : 0,
+							"z" : -1.74845553E-07
+						},{
+							"x" : 46.26795,
+							"y" : 0,
+							"z" : -1.00000036
+						},{
+							"x" : 47,
+							"y" : 0,
+							"z" : -1.7320509
+						},{
+							"x" : 48,
+							"y" : 0,
+							"z" : -2
+						},{
+							"x" : 49,
+							"y" : 0,
+							"z" : -1.7320509
+						},{
+							"x" : 49.73205,
+							"y" : 0,
+							"z" : -0.9999995
+						}
+					],
+					"positionSizes" : [
+						"MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM"
+					]
+				},{
+					"groupName" : "Group_5",
+					"shapeType" : "DIAMOND",
+					"objectSize" : "SMALL",
+					"points" : 10,
+					"positions" : [
+						{
+							"x" : 60,
+							"y" : 0,
+							"z" : -4.5
+						},{
+							"x" : 59.25,
+							"y" : 0,
+							"z" : -3
+						},{
+							"x" : 60.75,
+							"y" : 0,
+							"z" : -3
+						},{
+							"x" : 58.5,
+							"y" : 0,
+							"z" : -1.5
+						},{
+							"x" : 60,
+							"y" : 0,
+							"z" : -1.5
+						},{
+							"x" : 61.5,
+							"y" : 0,
+							"z" : -1.5
+						},{
+							"x" : 57.75,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 59.25,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 60.75,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 62.25,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 58.5,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 60,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 61.5,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 59.25,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 60.75,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 60,
+							"y" : 0,
+							"z" : 4.5
+						}
+					],
+					"positionSizes" : [
+						"SMALL","SMALL","SMALL","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","LARGE","MEDIUM","MEDIUM","MEDIUM","MEDIUM","SMALL","SMALL","SMALL"
+					]
+				},{
+					"groupName" : "Group_6",
+					"shapeType" : "DIAMOND",
+					"objectSize" : "SMALL",
+					"points" : 10,
+					"positions" : [
+						{
+							"x" : 72,
+							"y" : 0,
+							"z" : -4.5
+						},{
+							"x" : 71.25,
+							"y" : 0,
+							"z" : -3
+						},{
+							"x" : 72.75,
+							"y" : 0,
+							"z" : -3
+						},{
+							"x" : 70.5,
+							"y" : 0,
+							"z" : -1.5
+						},{
+							"x" : 72,
+							"y" : 0,
+							"z" : -1.5
+						},{
+							"x" : 73.5,
+							"y" : 0,
+							"z" : -1.5
+						},{
+							"x" : 69.75,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 71.25,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 72.75,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 74.25,
+							"y" : 0,
+							"z" : 0
+						},{
+							"x" : 70.5,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 72,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 73.5,
+							"y" : 0,
+							"z" : 1.5
+						},{
+							"x" : 71.25,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 72.75,
+							"y" : 0,
+							"z" : 3
+						},{
+							"x" : 72,
+							"y" : 0,
+							"z" : 4.5
+						}
+					],
+					"positionSizes" : [
+						"SMALL","SMALL","SMALL","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","LARGE","MEDIUM","MEDIUM","MEDIUM","MEDIUM","SMALL","SMALL","SMALL"
+					]
+				}
+			],
+			"target" : {
+				"smallObjects" : 103,
+				"mediumObjects" : 94,
+				"largeObjects" : 45,
+				"specialObjects" : 0
+			},
+			"timeLimit" : 30,
+			"moveLimit" : 10,
+			"targetScore" : 1000,
+			"levelType" : "DIAMOND"
+		}
+	}
+}
